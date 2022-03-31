@@ -9,10 +9,7 @@ image: /assets/img/ohmywebserver/machine.png
 # Introduction
  
  Oh My WebServer is room  made by big man [tinyb0y](https://twitter.com/t1nyb0y) on TryHackMe. It can be [found here](https://tryhackme.com/room/ohmyweb)
- <figure>
-<img src="/assets/img/ohmywebserver/machine.png" alt="machine">
-<figcaption></figcaption>
-</figure>
+ 
 <br>
  Here is write up on how i successfully compromised and obtainned user and root flags
 
