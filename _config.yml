@@ -18,7 +18,7 @@ Read to work and share knowledge
 # Replace with the website url, e.g. 'https://username.github.io'
 url: 'https://peterchain7.github.io'
 
-author: Mayank Deshmukh               # change to your full name
+author: peter chain              # change to your full name
 
 avatar: /assets/img/sample/profile.jpeg   # support internet resources
 
@@ -29,7 +29,7 @@ twitter:
   username:  peterChain7         # change to your twitter username
 
 social:
-  name: peter chain                 # it will shows as the copyright owner in Footer
+  name: peterchain                 # it will shows as the copyright owner in Footer
   email: petermwemsi@gmail.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
