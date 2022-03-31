@@ -47,7 +47,7 @@ google_site_verification: CtBtIysuQ8b6k36FI7jqU-o34DRoA_sye50a-RNtPPY # change t
 baseurl: ""
 
 # Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
-timezone: Africa/Nairobi
+timezone: Africa/Dar_es_Salaam
 
 google_analytics:
   id: "UA-177226674-1" # Fill with your Google Analytics ID
