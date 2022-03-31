@@ -1,7 +1,7 @@
 ---
 title: "HackTheBox — Laboratory Writeup"
 date: 2021-04-23 14:40:00 +0530
-categories: [HackTheBox,Linux Machines]
+categories: [HackTheBox]
 tags: [hackthebox, laboratory, ctf, gitlab, nmap, masscan, vhost, ffuf, cve-2020-10977, hackerone, lfi, Arbitrary-file-read, deserialization, ruby, rails, console, ssh, irb, path-hijack, suid, root ]
 image: /assets/img/Posts/Laboratory.png
 ---
