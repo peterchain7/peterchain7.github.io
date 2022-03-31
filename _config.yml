@@ -7,36 +7,36 @@
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 #--------------------------
 
-title: Oste's Blog # the main title
+title: peterChain's Blog # the main title
 
-tagline: CTF Player | Pentester | InfoSec Enthusiast # it will display as the sub-title
+tagline: Pentester | InfoSec Enthusiast # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   Realm of Knowledge
 
 # Replace with the website url, e.g. 'https://username.github.io'
-url: "https://05t3.github.io"
+url: "https://peterChain7.github.io"
 
 author: Stephen Kageche # change to your full name
 
-avatar: /assets/img/Posts/dp.jpg # support internet resources
+avatar: /assets/img/sample/profile.jpeg # support internet resources
 
 github:
-  username: 05t3 # change to your github username
+  username: peterchain7 # change to your github username
 
 twitter:
-  username: oste_ke # change to your twitter username
+  username: peterChain7 # change to your twitter username
 
 social:
-  name: Stephen Kageche # it will shows as the copyright owner in Footer
-  email: 05t3@protonmail.com # change to your email address
+  name: Petro Lwinga # it will shows as the copyright owner in Footer
+  email: petermwemsi@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/oste_ke # change to your twitter homepage
-    - https://github.com/05t3 # change to your github homepage
+    - https://twitter.com/peterChain7 # change to your twitter homepage
+    - https://github.com/peterchain7 # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
-    - https://www.linkedin.com/in/stephen-kageche-591193196/
+    # - https://www.linkedin.com/in/stephen-kageche-591193196/
 
 google_site_verification: CtBtIysuQ8b6k36FI7jqU-o34DRoA_sye50a-RNtPPY # change to your verification string
 
