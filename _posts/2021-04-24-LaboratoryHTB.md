@@ -3,7 +3,7 @@ title: "HackTheBox — Laboratory Writeup"
 date: 2021-04-23 14:40:00 +0530
 categories: [HackTheBox, Htb-Linux]
 tags: [hackthebox, laboratory, ctf, gitlab, nmap, masscan, vhost, ffuf, cve-2020-10977, hackerone, lfi, Arbitrary-file-read, deserialization, ruby, rails, console, ssh, irb, path-hijack, suid, root ]
-image: /assets/img/Posts/Laboratory.png
+image: /assets/img/laboratory/laboratory.png
 ---
 
 > Laboratory starts off with discovering an vulnerable GitLab instance running on the box. We'll refer an HackerOne report to exploit a CVE associated with it to get Arbitrary file read vulnerability and chain it to get obtain Remote Code execution on the GitLab container. Next we make use of Gitlab rails console to manipulate active user data and gain access to admin's private repository, where we discover an SSH key. For escalating privileges to root we exploit a SUID binary which doesn't call `chmod` binary from it's absolute path, we forge an malicious chmod binary, update the PATH which results it to run as root.
