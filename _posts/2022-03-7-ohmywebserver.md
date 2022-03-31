@@ -1,7 +1,7 @@
 ---
-title: "Oh My WebServer in tryhackme"
+title: "Oh My WebServer machine"
 date: 2022-03-25 00:10:10 +0530
-categories: [TryHackMe,Linux Machines]
+categories: [Tryhackme, Linux Machines]
 tags: [tryhackme, ctf, nmap, masscan, vhost, ffuf]
 image: /assets/img/nmap/hacker.jpeg
 ---
