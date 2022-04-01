@@ -2,7 +2,7 @@
 title: "Oh My WebServer machine"
 date: 2022-03-10 00:10:10 +0530
 categories: [Tryhackme, Linux Machine]
-tags: [tryhackme, ctf, nmap, masscan, vhost, ffuf]
+tags: [ctf]
 image: /assets/img/ohmywebserver/machine.png
 ---
 

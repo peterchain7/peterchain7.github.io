@@ -2,7 +2,7 @@
 title: "Penetration Testing"
 date: 2022-3-29 00:10:10 +0530
 categories: [Penetration Testing, Methodology]
-tags: [ctf, urchin, ctf, nmap,ffuf]
+tags: [ctf, urchin]
 image: /assets/img/pentesting/Web-Application-Penetration-Testing.jpg
 ---
 
