@@ -2,7 +2,7 @@
 title: "HackTheBox — Laboratory Writeup"
 date: 2021-04-23 14:40:00 +0530
 categories: [HackTheBox, Htb-Linux]
-tags: [hackthebox]
+tags: [hackthebox,nmap]
 image: /assets/img/laboratory/laboratory.png
 ---
 
