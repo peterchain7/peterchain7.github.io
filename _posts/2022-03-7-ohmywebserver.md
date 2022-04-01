@@ -56,10 +56,10 @@ Service detection performed. Please report any incorrect results at https://nmap
 
 <div class="overflow-table" markdown="block">
 
-| PORT STATE         | SERVICE VERSION                            |   
+| PORT STATE         | SERVICE VERSION                    |   
 | :------------------| :--------------------------------- | 
 |  22/tcp open       |  OpenSSH 8.2p1 Ubuntu 4ubuntu0.3   |
-|  80/tcp open       |  Apache httpd 2.4.49 ((Unix))       |      
+|  80/tcp open       |  Apache httpd 2.4.49 ((Unix))      |      
      
 </div>
 <br>

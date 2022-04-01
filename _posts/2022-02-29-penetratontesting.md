@@ -22,15 +22,35 @@ The primary benefit of Penetration Testing is to prevent data from being stolen 
 
 ## Types of pentration testing 
 
-- [x] Internal Penetration testing
+- [x] **Internal Penetration testing**
 
 As the name implies, the internal penetration testing is performed within the organization via LAN, including testing web applications that are hosted on the intranet. It facilitate identification of any vulnerabilities that may exist within the corporate firewall.
 
   Example.
+Some of the internal attacks that can happen include: 
+
+- Malicious Employee Attacks by aggrieved employees, contractors, or other parties who have resigned but still have access to the internal security policies and passwords
+- Social Engineering Attacks
+- Simulation of Phishing Attacks
+- Attacks using User Privileges 
+- Careless insider — an innocent employee who unknowingly exposes the system to outside threats. This is the most common type of insider threat, resulting from mistakes, such as leaving a device exposed or falling victim to a scam. For example, an employee who intends no harm may click on an insecure link, infecting the system with malware.
+
+- [x] **External Penetration testing**
+
+It focuses on attacks initiated from outside the organization to test web applications hosted on the internet. in here you may  have no  information about the internal system and the security layers implemented by the organization.\
 
 
-- [x] external Penetration testing
+<div class="overflow-table" markdown="block">
 
+| Form of penetration testing|        description                                |   
+| :--------------------------| :-------------------------------------------------| 
+|  White box                 | you have  full network and system information     |
+|  Grey Box                  | only limited information is shared with the tester|   
+|  Black Box                 | No information is provided to the tester at all   |      
+     
+</div>
+
+  
 
 ## Methodology in penetration testing 
 
