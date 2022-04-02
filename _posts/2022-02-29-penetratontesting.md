@@ -3,7 +3,7 @@ title: "Penetration Testing"
 date: 2022-3-29 00:10:10 +0530
 categories: [Penetration Testing, Methodology]
 tags: [ctf, urchin]
-image: /assets/img/pentesting/Web-Application-Penetration-Testing.jpg
+image: /assets/img/pentesting/Penetrationtesting.png
 ---
 
 # Introduction 
@@ -94,13 +94,120 @@ It focuses on attacks initiated from outside the organization to test web applic
 
             - Operating  systems, Web servers, User accounts and passwords.
 
+**Overview of Footprinting**
 
-## Lab Tasks on Footprinting and reconnaissance
+Footprinting refers to the process of collecting information about a target network and its environment, which helps in evaluating the security posture of the target organization’s IT infrastructure. It also helps to identify the level of risk associated with the organization’s publicly accessible information.
 
+Footprinting can be categorized into passive footprinting and active footprinting:
+
+1. Passive Footprinting: Involves gathering information without direct interaction. This type of footprinting is principally useful when there is a requirement that the information-gathering activities are not to be detected by the target.
+
+2. Active Footprinting: Involves gathering information with direct interaction. In active footprinting, the target may recognize the ongoing information gathering process, as we overtly interact with the target network.
+
+#### Lab 1. Tasks on Footprinting and reconnaissance
 
 1. Footprinting through search engines
 
-- Google hacking techniques
-- Video search engines
-- FTP search engines
-- IOT search engines 
+- Gather information using advanced Google hacking techniques
+
+Google Hacking involves an attacker submitting queries to Google's search engine with the intention of finding sensitive information residing on Web pages that have been indexed by Google, or finding sensitive information with respect to vulnerabilities in applications indexed by Google. [readmore here](https://securitytrails.com/blog/google-hacking-techniques)
+
+- Gather Information from Video search engines
+
+ Getting more information from videos uploaded by an organization. Example you can get these in youtube posts, just copy the *link location* of video and user site like [citizenevidence](https://citizenevidence.amnestyusa.org), [Google videos](https://video.google.com), Video analysis tool such as [EZGif](https://ezgif.com)
+
+- Gather Information from  FTP search engines
+
+ File Transfer Protocol (FTP) search engines are used to search for files located on the FTP servers.these files may hold valuable information about the target organization. Many industries, institutions, companies, and universities use FTP servers to keep large file archives and other software that are shared among their employees. FTP search engines provide information about critical files and directories, including valuable information such as business strategies, tax documents, employee’s personal records, financial records, licensed software, and other confidential information. EXample Enter company name in sites like [searchftps](https://www.searchftps.net/) to find any useful information
+
+- Gather Information from IoT Search Engines 
+
+ IoT search engines crawl the Internet for IoT devices that are publicly accessible. These search engines provide crucial information, including control of SCADA (Supervisory Control and Data Acquisition) systems, traffic control systems, Internet-connected household appliances, industrial appliances, CCTV cameras, etc. Site like [shodan](https://www.shodan.io) just enter company name in search bar. 
+
+##### Lab 2: Perform Footprinting Through Web Services
+
+**Lab Scenario**
+As a professional ethical hacker or pen tester, you should be able to extract a variety of information about your target organization from web services. By doing so, you can extract critical information such as a target organization’s domains, sub-domains, operating systems, geographic locations, employee details, emails, financial information, infrastructure details, hidden web pages and content, etc.
+
+Using this information, you can build a hacking strategy to break into the target organization’s network and can carry out other types of advanced system attacks.
+
+**Lab Objectives**
+
+- Find the Company’s Domains and Sub-domains using Netcraft
+- Gather Personal Information using PeekYou Online People Search Service
+- Gather an Email List using theHarvester
+- Gather Information using Deep and Dark Web Searching
+- Determine Target OS Through Passive Footprinting
+
+#### Lab 3: Perform Footprinting Through Social Networking Sites
+
+**Lab Scenario**
+
+As a professional ethical hacker, during information gathering, you need to gather personal information about employees working in critical positions in the target organization; for example, the Chief Information Security Officer, Security Architect, or Network Administrator. By footprinting through social networking sites, you can extract personal information such as name, position, organization name, current location, and educational qualifications. Further, you can find professional information such as company or business, current location, phone number, email ID, photos, videos, etc. The information gathered can be useful to perform social engineering and other types of advanced attacks.
+
+**Lab Objectives**
+
+- Gather employees’ information from LinkedIn using theHarvester
+- Gather personal information from various social networking sites using Sherlock
+- Gather information using Followerwonk
+
+#### Lab 4: Perform Website Footprinting
+
+**Lab Scenario**
+
+As a professional ethical hacker, you should be able to extract a variety of information about the target organization from its website; by performing website footprinting, you can extract important information related to the target organization’s website such as the software used and the version, operating system details, filenames, paths, database field names, contact details, CMS details, the technology used to build the website, scripting platform, etc. Using this information, you can further plan to launch advanced attacks on the target organization.
+
+**Lab Objectives**
+
+- Gather information about a target website using ping command line utility
+- Gather information about a target website using Central Ops
+- Extract a company’s data using Web Data Extractor
+- Mirror the target website using HTTrack Web Site Copier
+- Gather a wordlist from the target website using CeWL
+
+#### Lab 5: Perform Email Footprinting
+
+**Lab Scenario**
+
+As a professional ethical hacker, you need to be able to track emails of individuals (employees) from a target organization for gathering critical information that can help in building an effective hacking strategy. Email tracking allows you to collect information such as IP addresses, mail servers, OS details, geolocation, information about service providers involved in sending the mail etc. By using this information, you can perform social engineering and other advanced attacks.
+
+**Lab Objectives**
+
+- Gather information about a target by tracing emails using eMailTrackerPro
+
+#### Lab 6: Perform Whois footprinting
+
+**Lab Scenario**
+
+During the footprinting process, gathering information on the target IP address and domain obtained during previous information gathering steps is important. As a professional ethical hacker or penetration tester, you should be able to perform Whois footprinting on the target; this method provides target domain information such as the owner, its registrar, registration details, name server, contact information, etc. Using this information, you can create a map of the organization’s network, perform social engineering attacks, and obtain internal details of the network.
+
+**Lab Objectives**
+
+- Perform Whois lookup using DomainTools
+
+#### Lab 7: Perform DNS Footprinting
+
+**Lab Scenario**
+
+As a professional ethical hacker, you need to gather the DNS information of a target domain obtained during the previous steps. You need to perform DNS footprinting to gather information about DNS servers, DNS records, and types of servers used by the target organization. DNS zone data include DNS domain names, computer names, IP addresses, domain mail servers, service records, and much more about a target network.
+
+Using this information, you can determine key hosts connected in the network and perform social engineering attacks to gather even more information.
+
+**Lab Objectives**
+
+- Gather DNS information using nslookup command line utility and online tool
+- Perform reverse DNS lookup using reverse IP domain check and DNSRecon
+
+
+#### Lab 8: Perform Network Footprinting
+
+**Lab Scenario**
+
+With the IP address, hostname, and domain obtained in the previous information gathering steps, as a professional ethical hacker, your next task is to perform network footprinting to gather the network-related information of a target organization such as network range, traceroute, TTL values, etc. This information will help you to create a map of the target network and perform a man-in-the-middle attack.
+
+**Lab Objectives**
+
+- Locate the network range
+- Perform network tracerouting in Windows and Linux Machines
+
+**End of some note about Footprinting and reconnaissance,** *Next Scanning and enumeration*
