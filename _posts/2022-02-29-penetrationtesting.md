@@ -65,19 +65,22 @@ It focuses on attacks initiated from outside the organization to test web applic
 
 **Note** Everyone according to experience in penetration testing may have own methodoly depending on the type of resources being tested and competece in penetration testing.
 
+
 ### simple brief explanation of each methodology
 
-1. **Planning and preparing**
 
-- Defining the scope and goals of a test, including the systems to be addressed and the testing methods to be used.
-- Set goals for overall penetration testing tast
-- Conduct a threat model, Here plan and concetrate on targeted areas so as findings more vulnerabilities in short time frame
+- [x] 1. **Planning and preparing**
 
-2. **Footprinting and reconnaissance**
+ i. Defining the scope and goals of a test, including the systems to be addressed and the testing methods to be used.\
+ ii. Set goals for overall penetration testing tast\
+ iii. Conduct a threat model, Here plan and concetrate on targeted areas so as findings more vulnerabilities in short time frame
+
+
+- [x] 2. **Footprinting and reconnaissance**
 
 **Note** This is very most important stage in penetration testing, Because it is foundation for all other stages. Failure to perform footprinting and reconnaissance will increate the highest channces of finding *No* or *Very few* Vulnerabilities.
-
-- Here we are going to collect more information about the target network or organization.
+ 
+ - Here we are going to collect more information about the target network or organization.
 
   Example.
 
