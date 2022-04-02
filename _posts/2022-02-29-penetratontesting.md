@@ -7,8 +7,8 @@ image: /assets/img/pentesting/Penetrationtesting.png
 ---
 
 # Introduction 
-Am [peterChain](https://twitter.com/peterChain7), A holder of  bachelor in information systems. A hardcore in cybersecurity, My purpose in hacking is like anybodies purpose and all in all is to keep and implement secure systems as possible.\
-Am going to introduce to you guys some guides to an overview of penetration testing as a bigginer in Penetration Testing and ethical hacking.
+Am [peterChain](https://twitter.com/peterChain7), A holder of bachelor degree in information systems. A hardcore in cybersecurity, My purpose in cybersecurity is like anybodies purpose and all in all is to keep and implement secure systems as possible.
+Am going to introduce to you guys some guides to an overview of penetration testing and ethical hacking.
 
 **Why we need Penetration Testing?**
 
