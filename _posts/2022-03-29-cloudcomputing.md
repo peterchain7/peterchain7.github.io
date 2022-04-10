@@ -3,7 +3,7 @@ title: "cloud computing"
 date: 2022-04-3 00:10:10 +0530
 categories: [Penetration Testing, Cloud Computing]
 tags: [ctf, urchin]
-image: /assets/img/pentesting/Penetrationtesting.png
+image: /assets/img/cloud/cloud-computing-growth.jpg
 ---
 
 
