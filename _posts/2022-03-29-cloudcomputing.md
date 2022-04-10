@@ -253,6 +253,6 @@ Full lab and practise for exaploiting AIM can be found [here, check it](https://
 
 [tips to secure yourself](https://medium.com/nerd-for-tech/all-you-need-to-know-about-cloud-computing-and-cyber-security-8a05e5865020)
 
-** Thanks keep an eye on this for more new updates** 
+**Thanks keep an eye on this for more new updates** 
 
 ![thanks much](/assets/img/cloud/thank-you-thanks.gif)
