@@ -152,7 +152,7 @@ So from here the *bucket* name is *abc*
 
 i. lazy s3 
  
- A perl Ruby based script to brute-force S3 buckets of a target company [chek it here](https://github.com/nahamsec/lazys3)
+ A Ruby based script to brute-force S3 buckets of a target company [chek it here](https://github.com/nahamsec/lazys3)
 
  Example usage:
 
@@ -219,7 +219,7 @@ Installation.
  aws s3 ls s3://abc.example.com
  ```
 
- ii. Copy files to aws s3 bucket
+ ii. Move files from your local machine to aws s3 bucket
  
  ```bash
  asw s3 mv malicious.txt s3://abc.example.com
@@ -230,7 +230,7 @@ Installation.
  ```bash
  aws s3 rm s3://abc.example.com/malicious.txt
  ```
-iv. copyin g files from s3 bucke
+iv. copying files from s3 bucket
 
 ```bash
 aws s3 cp <file> s3://<bucket-name>
