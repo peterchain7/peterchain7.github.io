@@ -15,9 +15,10 @@ Am [peterChain](https://twitter.com/peterChain7), Am going to share with you guy
 
  *cloud computing* Is the delivery of computing services—including servers, storage, databases, networking, software, analytics, and intelligence—over the Internet (“the cloud”) to offer faster innovation, flexible resources, and economies of scale. You typically pay only for cloud services you use, helping you lower your operating costs, run your infrastructure more efficiently, and scale as your business needs change.
 
-## why use cloud service ❓❓
+## why use cloud services ❓❓
 
 - [x] cost-effective
+
 Without cloud computing It requires additional investment in hardware, network equipment, software licenses and in-house technician, Cloud computing eliminates the capital expense of buying hardware and software and setting up and running on-site datacenters, So it more economy friendly
 
  **More and more**
@@ -56,7 +57,7 @@ Knows *as on-demand software* Web-based/Web-hosted software,Instead of installin
  *more and more*
 
 
- ## cloud computing infrastructure
+## cloud computing infrastructure
 
  Basically it has Front End and Back End
 
@@ -73,12 +74,19 @@ The back end is used by the service provider. It manages all the resources that 
 ## Example of cloud service providers
 
 i. Amazon Web Services (AWS)
+
 ii. Microsoft Azure.
+
 iii. Google Cloud.
+
 iv. Alibaba Cloud.
+
 v.  IBM Cloud.
+
 vi. Oracle.
+
 vii. Salesforce.
+
 viii. SAP.
 
 # Enumeration and Exploitation of cloud services. (Aws S3 Bucket Enumeration)
@@ -142,7 +150,7 @@ So from here the *bucket* name is *abc*
 
 - [x] **You can use many online tools which are available on GitHub to find S3 bucket of a website.**
 
-i. lazy3 
+i. lazy s3 
  
  A perl Ruby based script to brute-force S3 buckets of a target company [chek it here](https://github.com/nahamsec/lazys3)
 
@@ -199,13 +207,19 @@ Installation.
  ```
  Example usage:
 
+**Note** You need to have aws s3 account before using tool and configure it
+
+```bash
+└─$ aws configure
+```
+
  i. list files from bucket found during enumeration
 
  ```bash
  aws s3 ls s3://abc.example.com
  ```
 
- ii. Copy files to aws s3 bucker
+ ii. Copy files to aws s3 bucket
  
  ```bash
  asw s3 mv malicious.txt s3://abc.example.com
@@ -222,9 +236,9 @@ iv. copyin g files from s3 bucke
 aws s3 cp <file> s3://<bucket-name>
 ```
 
-#### asw AIM 
+#### AWS AIM 
 
-Aws identiry and Access Management (IAM). You can exaploit misconfired IAM user privileges, By exaploiting misconfigured user policy.
+Aws identity and Access Management (IAM). You can exaploit misconfired IAM user privileges, By exaploiting misconfigured user policy.
 
 Full lab and practise for exaploiting AIM can be found [here, check it](https://attackdefense.pentesteracademy.com/listingnoauth?labtype=cloud-services&subtype=cloud-services-amazon-iam)
 
@@ -239,3 +253,6 @@ Full lab and practise for exaploiting AIM can be found [here, check it](https://
 
 [tips to secure yourself](https://medium.com/nerd-for-tech/all-you-need-to-know-about-cloud-computing-and-cyber-security-8a05e5865020)
 
+** Thanks keep an eye on this for more new updates** 
+
+![thanks much](/assets/img/cloud/thank-you-thanks.gif)
