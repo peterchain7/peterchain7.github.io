@@ -28,7 +28,7 @@ twitter:
   username: hashghost101 # change to your twitter username
 
 social:
-  name: Petro Lwinga # it will shows as the copyright owner in Footer
+  name: gemstone # it will shows as the copyright owner in Footer
   email: sophiajulius5@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
@@ -62,7 +62,7 @@ google_analytics:
 
 disqus:
   comments: true # boolean type, the global switch for posts comments.
-  shortname: "peterchain" # Fill with your Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+  shortname: "hashghost" # Fill with your Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
 plugins:
   - jekyll-seo-tag
