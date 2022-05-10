@@ -1,5 +1,5 @@
 ---
-title: Welcome to the Realm of Knowledge
+title: Welcome to the Realm
 
 # The About page
 # v2.0
