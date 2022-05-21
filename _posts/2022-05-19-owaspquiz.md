@@ -1,8 +1,13 @@
+---
+title: "OwaspQuiz  machine"
+date: 2022-03-10 00:10:10 +0530
+categories: [Tryhackme, Linux Machine]
+tags: [ctf]
+image: https://i.imgur.com/DLZX3aT.png
+---
 # OwaspQuiz
 
-![](https://i.imgur.com/DLZX3aT.png)
--- -
-### username: `peterChain`
+
 -- -
 >[!LESSON LEARNED IN THIS MACHINE]
 >
