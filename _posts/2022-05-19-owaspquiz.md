@@ -3,7 +3,7 @@ title: "OwaspQuiz  machine"
 date: 2022-03-10 00:10:10 +0530
 categories: [Tryhackme, Linux Machine]
 tags: [ctf]
-image: https://i.imgur.com/DLZX3aT.png
+image: /assets/img/owaspQuiz/download.jpeg
 ---
 # OwaspQuiz
 
