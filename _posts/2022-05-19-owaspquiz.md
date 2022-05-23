@@ -1,14 +1,13 @@
 ---
-title: "OwaspQuiz  machine"
-date: 2022-03-10 00:10:10 +0530
+title: "OwaspQuiz machine"
+date: 2022-05-19 00:10:10 +0530
 categories: [Tryhackme, Linux Machine]
 tags: [ctf]
 image: /assets/img/owaspQuiz/download.jpeg
 ---
+
 # OwaspQuiz
 
-
--- -
 **LESSON LEARNED IN THIS MACHINE**
 
 >1. Web application Enumeration
