@@ -35,7 +35,7 @@ cat /etc/*-release 2>/dev/nul
 ```bash
 getcap -r / 2>/dev/null
 ```
-- Logged in Users adn what they are doing
+- Logged in Users and what they are doing
 
 ```bash
 whom
@@ -52,11 +52,9 @@ ps au
 find / -path /proc -prune -o -type d -perm -o+w 2>/dev/null
 ```
 
-
-##  vulnerabilities that can led to Linux Privilege Escalation.
+<p class="callout info">vulnerabilities that can led to Linux Privilege Escalation</p>
 
 ```bash
--  Introduction to Linux Privilege Escalation
 -   Kernel exploits
 -   Programs running as root
 -   Installed software
