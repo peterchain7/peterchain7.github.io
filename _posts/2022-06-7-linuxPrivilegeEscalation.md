@@ -52,13 +52,8 @@ ps au
 find / -path /proc -prune -o -type d -perm -o+w 2>/dev/null
 ```
 
-<div class="primer-spec-callout success" markdown="1">
-  _**Pro tip:** Use this to celebrate an achievement!_
-</div>
 
-<!-- <div class="primer-spec-callout success" markdown="1">
-_vulnerabilities that can led to Linux Privilege Escalation!_
-</div> -->
+## vulnerabilities that can led to Linux Privilege Escalation!_
 
 ```bash
 -   Kernel exploits
