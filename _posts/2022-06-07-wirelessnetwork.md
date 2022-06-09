@@ -1,7 +1,7 @@
 ---
 title: "Wireless - Network Security" 
 date: 2022-06-07 15:40:00 +0530
-categories: [Wireless Network, LearnHacking]
+categories: [Wireless Network, Learn Hacking]
 tags: [ctf,nmap,hackthebox]
 image: /assets/img/wifi/wifi.jpeg
 ---
