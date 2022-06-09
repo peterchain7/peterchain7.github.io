@@ -53,7 +53,7 @@ find / -path /proc -prune -o -type d -perm -o+w 2>/dev/null
 ```
 
 <div class="primer-spec-callout success" markdown="1">
- *vulnerabilities that can led to Linux Privilege Escalation!*
+_vulnerabilities that can led to Linux Privilege Escalation!_
 </div>
 <p class="callout info"></p>
 
