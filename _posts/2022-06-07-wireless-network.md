@@ -1,12 +1,12 @@
 ---
 title: "Wireless - Network Security" 
 date: 2022-06-07 15:40:00 +0530
-categories: [Wireless Network, Learn Hacking]
+categories: [Wireless Network, Hacking]
 tags: [ctf,nmap,hackthebox]
 image: /assets/img/wifi/wifi.jpeg
 ---
 
-# Wireless Network 
+# Wireless Network
 
 ### Wi-Fi ==> `Wireless Fidelity`
 ```bash
