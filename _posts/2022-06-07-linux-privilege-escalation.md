@@ -6,11 +6,13 @@ tags: [ctf,nmap,hackthebox]
 image: /assets/img/privilegeescalation/logoLInuxpriv.jpg
 ---
 
-# Linux Privilege escalation.
+# Linux Privilege escalation
+
 > [!TOPIC]
 > Linux operating system hacking to gain more permision in the operating system.
 
 >[!NOTE]
+
 >## WHERE TO START?
 
 Prior to doing anything, you need to get an idea of what you are dealing with.
@@ -20,38 +22,43 @@ Prior to doing anything, you need to get an idea of what you are dealing wit
 ```bash
 uname -a 2>/dev/null
 ```
+
 - Process information
 
 ```bash
 cat /proc/cpuinfo 2>/dev/null
 ```
--  The os version
+
+- The os version
 
 ```bash
 cat /etc/*-release 2>/dev/nul
 ```
+
 - Linux capabilities
 
 ```bash
 getcap -r / 2>/dev/null
 ```
+
 - Logged in Users and what they are doing
 
 ```bash
 whom
 w
 ```
+
 - List current process
 
 ```bash
 ps au
 ```
+
 - Find writable directory
 
 ```shell-session
 find / -path /proc -prune -o -type d -perm -o+w 2>/dev/null
 ```
-
 
 ## vulnerabilities that can led to Linux Privilege Escalation!_
 
@@ -82,22 +89,23 @@ find / -path /proc -prune -o -type d -perm -o+w 2>/dev/null
 -    Linux Local Privilege Escalation - Skills Assessment
 ```
 
-
 [My reference](https://systemweakness.com/how-to-escalate-privileges-in-linux-privilege-escalation-techniques-70c92499ae45)
 
 ### 1. Kernel Exploits
+
 >Targets linux kernel to execute malicios codes in the target system with an eleveted privileges.
 This is because kernel is running with higher privileges in the linux operating system.
 
 >[!Work Flow]
+>
 > 1. Trick the kernel to run our payload in kkernel mode
-> 2. Manipulate kernel data, process privileges 
+> 2. Manipulate kernel data, process privileges
 > 3. Launch a shell with new privileges Get root!
 
 <!-- > conditions for successfully kernel exploit -->
 
-
 >[!PREVENTION]
+>
 >1. Making sure kernel are patched
 >2. Making sure remove if not neccessary file transfer programs, like FTP,SCP,TFTP, curl,wget. Or should be run under limited privileges to some users
 
@@ -107,6 +115,7 @@ This is because kernel is running with higher privileges in the linux operating 
 A race condition was found in the way the Linux kernel’s memory subsystem handled the copy-on-write (COW) breakage of private read-only memory mappings.
 
 >[!CAUTION]
+
 >## Why you should avoid running any local privilege escalation exploit at first place?
 
 Though, it feels very tempting to just run an exploit and get root access, but you should always keep this as your last option.
@@ -128,11 +137,13 @@ The famous [EternalBlue](https://en.wikipedia.org/wiki/EternalBlue) and [Samb
 
 Running service have a greate security risk.
 Example.
+
 1. Web servers
 2. mail servers
 3. database servers
 
 It shows you all the ports open and are listening.
+
 ```bash
 netstat -antup
 ```
@@ -143,22 +154,24 @@ netstat -antup
 [MySQL UDF Dynamic Library](https://www.exploit-db.com/exploits/1518/) exploit lets you execute arbitrary commands from the mysql shell. If mysql is running with root privileges, the commands will be executed as root.
 
 It shows us the services which are running as root
+
 ```bash
  ps -aux | grep root
 ```
 
 Other example
+
 ```bash
 select sys_exec('whoami');
 select sys_eval('whoami');
 ```
 
-
 >[!NOTE]
 >One of the biggest mistake web admins do, is to run a webserver with root privilege. A command injection vulnerability on the web application can lead an attacker to root shell. **_This is a classic example of why you should never run any service as root unless really require_**
 
 ### 3. Exploiting SUID Executables
-SUID means Set User ID, A feature that allows programs to run with root privileges in the system. 
+
+SUID means Set User ID, A feature that allows programs to run with root privileges in the system.
 
 ```bash
 -rwsr-xr-x–
@@ -167,9 +180,9 @@ SUID means Set User ID, A feature that allows programs to run with root privileg
 The **s** Means SUID bit, the file can be run with root permision.
 
 >[!NOTE]
->SUID bit should not be set especially on any file editor as an attacker can overwrite any files present on the 
+>SUID bit should not be set especially on any file editor as an attacker can overwrite any files present on the
 
-Finding executables with a SUID bit set 
+Finding executables with a SUID bit set
 
 ```bash
 # Find SUID
@@ -185,8 +198,7 @@ find / -perm -g=s -type f 2>/dev/null
 find / -path /proc -prune -o -type f -perm -o+w 2>/dev/null
 ```
 
-
-###  5.  Exploiting badly configured cron jobs.
+### 5.  Exploiting badly configured cron jobs
 
 >[!EXAMPLE]
 >**_Cron jobs, if not configured properly can be exploited to get root privilege._**
@@ -212,9 +224,9 @@ cat /etc/anacrontab
 cat /var/spool/cron/crontabs/root
 ```
 
-### 6.  World writable scripts invoked as root.
+### 6.  World writable scripts invoked as root
 
-If you can find word writable files by root you can add your own malicious code in that script that when root run it, It will escalate privileges to root. 
+If you can find word writable files by root you can add your own malicious code in that script that when root run it, It will escalate privileges to root.
 
 ```bash
 # World writable files directories
@@ -229,4 +241,3 @@ find / -perm -o x -type d 2>/dev/null
 # World writable and executable folders
 find / \( -perm -o w -perm -o x \) -type d 2>/dev/null
 ```
-
