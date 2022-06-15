@@ -97,7 +97,8 @@ AD DS data. DCs host other services that are complementary to AD DS as well.
 ASREPRoast.
 
     Attack looks for users without Kerberos pre-authentication required attribute (DONT_REQ_PREAUTH). That means that anyone can send an AS_REQ request to the DC on behalf of any of those users, and receive an AS_REP message.
-      A) impacket-GetNPUsers ==> Find users with preauthentication Enabled
+
+    A) impacket-GetNPUsers ==> Find users with preauthentication Enabled
     
 Kerberos Attacks called ==> Kerberoasting is an attack that abuses the Kerberos protocol to harvest password hashes for Active Directory user accounts with service Principal Name (SPN) values.
 
