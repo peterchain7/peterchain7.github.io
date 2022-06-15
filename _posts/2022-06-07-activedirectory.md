@@ -79,10 +79,12 @@ AD DS data. DCs host other services that are complementary to AD DS as well.
 <figcaption>Kerberous Authentication</figcaption>
 </figure>
 
-#### Terms used in AD
+#### Terms used in AD.
+
 - Domain
 - Tree
 - Forest
+
 
 ##### Active Directory Best Practises
 
@@ -92,7 +94,6 @@ AD DS data. DCs host other services that are complementary to AD DS as well.
 </figure>
 
 ## Attacks Related to Active Directory.
-
 
 ASREPRoast.
 
