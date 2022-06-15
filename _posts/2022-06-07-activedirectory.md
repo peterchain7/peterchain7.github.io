@@ -64,18 +64,18 @@ Are the servers in your network that host AD DS. DCs respond to authentication r
 AD DS data. DCs host other services that are complementary to AD DS as well.
 
 <figure>
-<img src="/assets/img/ad/dc.jpeg" alt="Domain controller">
+<img src="/assets/img/ad/dc.png" alt="Domain controller">
 <figcaption>Domain Controller</figcaption>
 </figure>
 
 <figure>
-<img src="/assets/img/ad/kb.jpeg" alt="kb">
+<img src="/assets/img/ad/kb.png" alt="kb">
 <figcaption>Kerberous Authentication</figcaption>
 </figure>
 
 
 <figure>
-<img src="/assets/img/ad/kb2.jpeg" alt="kb">
+<img src="/assets/img/ad/kb2.png" alt="kb">
 <figcaption>Kerberous Authentication</figcaption>
 </figure>
 
@@ -89,7 +89,7 @@ AD DS data. DCs host other services that are complementary to AD DS as well.
 ##### Active Directory Best Practises
 
 <figure>
-<img src="/assets/img/ad/adbest.jpeg" alt="ad best">
+<img src="/assets/img/ad/adbest.png" alt="ad best">
 <figcaption>Active Directory Best Practise</figcaption>
 </figure>
 
