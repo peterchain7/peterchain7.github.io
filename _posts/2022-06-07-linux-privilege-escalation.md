@@ -58,6 +58,10 @@ ps au
 
 ```shell-session
 find / -path /proc -prune -o -type d -perm -o+w 2>/dev/null
+
+or
+
+find / -writable -type f 2>/dev/null | grep -v "/proc/"
 ```
 
 ## vulnerabilities that can led to Linux Privilege Escalation!_
