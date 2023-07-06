@@ -17,7 +17,7 @@ description: >- # used by seo meta and the atom feed
 # Replace with the website url, e.g. 'https://username.github.io'
 url: "https://peterChain7.github.io"
 
-author: petro lwinga # change to your full name
+author: peter chin # change to your full name
 
 avatar: /assets/img/profile/profile.png # support internet resources
 
@@ -28,8 +28,8 @@ twitter:
   username: peterChain7 # change to your twitter username
 
 social:
-  name: Petro Lwinga # it will shows as the copyright owner in Footer
-  email: petermwemsi@gmail.com # change to your email address
+  name: Peter Chin # it will shows as the copyright owner in Footer
+  # email: @gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
     - https://twitter.com/peterChain7 # change to your twitter homepage
