@@ -41,7 +41,7 @@ image: /assets/img/backtrack/profile.png
 
 
 
- <figure>
+<figure>
 <img src="/assets/img/ohmywebserver/finished-finally-finished.gif" alt="finished-finally-finished">
 <figcaption></figcaption>
 </figure>
