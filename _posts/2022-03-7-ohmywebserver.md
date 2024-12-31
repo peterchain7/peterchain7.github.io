@@ -337,6 +337,7 @@ root@ubuntu:/root# cat root.txt
 cat root.txt
 THM{REDACTED}
 root@ubuntu:/root#
+
 ```
 Congrats to [tinyb0y](https://twitter.com/t1nyb0y) 
  <figure>

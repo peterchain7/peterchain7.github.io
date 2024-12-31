@@ -35,9 +35,14 @@ image: /assets/img/backtrack/profile.png
 7. Clearing loggs
 8. Reporting 
 
+
 #### Enumeration and Scanning
 
+ - Started with basic Nmap scan
 
+ ```console
+└─$ nmap -vvv -Pn -oN nmap-scan.txt IP 
+```
 
 
 
