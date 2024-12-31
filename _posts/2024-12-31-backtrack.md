@@ -1,5 +1,5 @@
 ---
-title: "Backtrack machine"
+title: "backtrack machine"
 date: 2024-12-31 00:10:10 +0530
 categories: [Tryhackme, Linux Machine]
 tags: [ctf]
@@ -34,3 +34,16 @@ image: /assets/img/backtrack/profile.png
 6. Root prevelege escalation
 7. Clearing loggs
 8. Reporting 
+
+#### Enumeration and Scanning
+
+
+
+
+
+ <figure>
+<img src="/assets/img/ohmywebserver/finished-finally-finished.gif" alt="finished-finally-finished">
+<figcaption></figcaption>
+</figure>
+
+<br>
