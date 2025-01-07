@@ -26,7 +26,6 @@ Detailled walkthrough on how i successfully compromised and obtainned user and r
 >9. Root privilege escalation through TTY push back
 
 ### Methodolgy
-
 1. Enumeration and Scanning 
 2. Vulnerability Analysis
 3. Penetration testing
