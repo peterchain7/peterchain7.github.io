@@ -26,7 +26,6 @@ Detailled walkthrough on how i successfully compromised and obtainned user and r
 >9. Root privilege escalation through TTY push back
 
 ### Methodolgy
-
 1. Enumeration and Scanning 
 2. Vulnerability Analysis
 3. Penetration testing
@@ -389,8 +388,9 @@ wilbur@Backtrack:~$
 
 - uploaded malicious `php` file by bypassing file extention checks like, `file.jpg.php`.
 - Also the file should be uploaded in diffrent directory rather than `/uploads` b'cz we can not execute it in there. done by double encodeing `../`.
+
 <figure>
-<img src="/assets/img/backtrack/shell-upload.png-" alt="port 80 shell upload">
+<img src="/assets/img/backtrack/shell-upload.png" alt="port 80 shell upload">
 <figcaption>port 80 shell upload</figcaption>
 </figure>
 
