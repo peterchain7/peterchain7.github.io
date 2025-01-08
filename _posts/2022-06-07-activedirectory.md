@@ -1,5 +1,5 @@
 ---
-title: "Active Directory"
+title: "activedirectory"
 date: 2022-06-07 00:10:10 +0530
 categories: [AD-DS]
 tags: [ctf]
@@ -19,6 +19,7 @@ i. SMB (Server Message Block (SMB))
 port 139 NetBois
 port 445 TCP/IP
 ```
+
 ii. Session service
 
 ```bash
