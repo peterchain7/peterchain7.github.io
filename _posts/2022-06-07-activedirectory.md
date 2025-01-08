@@ -1,6 +1,6 @@
 ---
 title: "Active Directory"
-date: 2022-06-13 00:10:10 +0530
+date: 2022-06-07 00:10:10 +0530
 categories: [Active Directory]
 tags: [ctf]
 image: /assets/img/ad/activedirectory-page.png
