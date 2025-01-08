@@ -245,3 +245,11 @@ find / -perm -o x -type d 2>/dev/null
 # World writable and executable folders
 find / \( -perm -o w -perm -o x \) -type d 2>/dev/null
 ```
+
+### 7. Finding files owned by specific user'
+
+```bash
+# Find files owned by user pain
+find / -perm -u=s -user pain 2>/dev/null
+find / -user pain 2>/dev/null
+```
