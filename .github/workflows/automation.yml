@@ -17,22 +17,22 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-  
+      
     steps:
-      - uses: actions/setup-ruby@v1
+      - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '2.7.0'
-
+          ruby-version: '3.3'
+          bundler-cache: true
+    
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
-
-      # Runs Publish & Lastmod script
+    
       - name: Publish script
         run: |
           bash tools/publish.sh
           
       - name: Lastmod script
         run: |
-          bash _scripts/sh/dump_lastmod.sh        
+          bash _scripts/sh/dump_lastmod.sh     
