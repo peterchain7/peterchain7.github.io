@@ -3,7 +3,7 @@ title: "Agentic AI & MCP-Based Offensive Security Recon Pipeline"
 date: 2026-07-02 00:00:00 +0000
 categories: [Cybersecurity, Offensive Security]
 tags: [vapt, recon, osint, agentic-ai, mcp, ollama, llm, nmap, pentest]
-image: /assets/img/security/agentic_security_banner.png
+image: /assets/img/agenticAI.png
 ---
 
 > **Disclaimer:** This content is intended for authorized cybersecurity engineering, internal infrastructure auditing, and defensive validation in permissible corporate environments. All techniques discussed assume full legal authorization and compliance.
